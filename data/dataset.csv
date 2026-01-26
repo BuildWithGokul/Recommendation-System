@@ -1,0 +1,7 @@
+user_id,item_id,item_name,category,rating
+1,101,Python Course,Programming,5
+1,102,ML Course,AI,4
+2,101,Python Course,Programming,4
+2,103,Data Science Course,AI,5
+3,104,Web Dev Course,Programming,5
+3,101,Python Course,Programming,3

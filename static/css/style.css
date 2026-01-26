@@ -1,0 +1,110 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+
+
+body{
+background:radial-gradient(circle at top,#0f172a,#020617);
+color:white;
+min-height:100vh;
+}
+
+
+.nav{
+display:flex;
+justify-content:space-between;
+padding:20px 60px;
+background:rgba(255,255,255,0.03);
+backdrop-filter:blur(10px);
+animation:slideDown 1s ease;
+}
+
+
+@keyframes slideDown{from{transform:translateY(-40px);opacity:0}to{transform:translateY(0);opacity:1}}
+
+
+.logo{font-weight:700;font-size:22px;color:#38bdf8}
+.menu a{margin-left:25px;cursor:pointer;opacity:.8}
+.menu a:hover{opacity:1;color:#38bdf8}
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+padding:80px 60px;
+align-items:center;
+}
+
+
+.hero-text h1{font-size:50px;animation:fadeLeft 1s ease}
+.hero-text p{margin:20px 0;opacity:.8;animation:fadeLeft 1.4s ease}
+
+
+.hero-text button{
+padding:14px 30px;
+border:none;
+border-radius:30px;
+background:#38bdf8;
+color:black;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+
+.hero-text button:hover{transform:scale(1.08);box-shadow:0 0 30px #38bdf8}
+
+
+@keyframes fadeLeft{from{transform:translateX(-40px);opacity:0}to{transform:translateX(0);opacity:1}}
+.hero-card{display:flex;justify-content:center;animation:float 4s ease-in-out infinite}
+@keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-15px)}100%{transform:translateY(0)}}
+
+
+.glass{
+width:320px;
+padding:25px;
+border-radius:20px;
+background:rgba(255,255,255,0.06);
+backdrop-filter:blur(12px);
+box-shadow:0 0 40px rgba(56,189,248,0.2);
+}
+
+
+.glass h3{color:#38bdf8;margin-bottom:15px}
+
+
+.glass ul li{
+list-style:none;
+margin:10px 0;
+padding:10px;
+background:rgba(255,255,255,0.05);
+border-radius:8px;
+animation:pop .4s ease;
+}
+
+
+@keyframes pop{from{transform:scale(.7);opacity:0}to{transform:scale(1);opacity:1}}
+.contact-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.contact-btn:hover {
+  background: #1fb6ff;
+  color: #000;
+}
+
+.contact-note {
+  margin-top: 20px;
+  opacity: 0.85;
+  line-height: 1.8;
+}

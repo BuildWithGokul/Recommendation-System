@@ -1,11 +1,11 @@
-from flask import Flask, render_template, request
+from flask import Flask
 
 app = Flask(__name__)
 
 # Home page
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return "Server running"
 
 # Recommendation route
 @app.route('/recommend', methods=['POST'])

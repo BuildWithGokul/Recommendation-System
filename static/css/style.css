@@ -108,3 +108,85 @@ animation:pop .4s ease;
   opacity: 0.85;
   line-height: 1.8;
 }
+/* ==========================
+   Universal Responsive Setup
+   ========================== */
+
+/* Reset box-sizing and margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body base styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Main container adapts to screen width */
+.container {
+  width: 90%;        /* fluid width */
+  max-width: 1200px; /* prevents huge stretching on large screens */
+  margin: 0 auto;    /* centers content */
+  padding: 20px;
+}
+
+/* Flex layout for sections/rows */
+.row {
+  display: flex;
+  flex-wrap: wrap;   /* allows wrapping on smaller screens */
+  gap: 20px;
+}
+
+.col {
+  flex: 1 1 300px;   /* flex-grow, flex-shrink, base width */
+  min-width: 250px;  /* prevents columns from being too narrow */
+}
+
+/* Images scale automatically */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Buttons scale nicely */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* ==========================
+   Media Queries
+   ========================== */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .col {
+    flex: 1 1 100%;  /* stack columns vertically */
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .row {
+    gap: 10px;
+  }
+}
